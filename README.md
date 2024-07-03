@@ -1,70 +1,103 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Mission_2
 
-## Available Scripts
+You will continue to work on the Turners Car Insurance Project
+ 
+You will be working on the backend and apply an Agile practice of Test-Driven Development (TDD).  As part of the project, there are 3 RESTful APIs that are required as part of the insurance purchasing process (here are the specification for the 3 APIs).  You can choose to have your API running on your laptop or on the cloud.  You will perform this Mission in a team of up to 3 developers.  Each member will be responsible for one API and its test cases.  If you are grouped with UX Designers, you will include UX Designers in your Daily Standups with your developer team.
 
-In the project directory, you can run:
+Task 1. Sprint Planning
+The team will meet at the beginning of the week to discuss and divide up tasks in this Mission.
 
-### `npm start`
+Task 2. Use JIRA to Manage Team Tasks
+The team will setup a Jira board to share amongst the team to manage all tasks.  The Jira board will be setup with 3 columns: "To-do", "In-progress", "Done".  The team can enter high level tasks and/or sub-tasks into Jira.  Team members will update Jira when they are working on a task or finished a task.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Task 3. Daily Standup
+The team will run Daily Scrums for 5 days of the week at a set time agreed by the team.  Each Daily Scrum should be less than 10 minutes in duration – with each team member taking turn to answering 3 Questions.  Everyday after the Scrum meeting, send your trainer a message with a list of “blockers” discussed. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The following resource may help:
 
-### `npm test`
+RECOMMENDED How to run daily scrums effectively http://www.base36.com/2013/03/how-to-run-an-effective-scrum-meeting/ (5 mins)
+ 
+Task 4. Learn about Test-Driven Development 
+Let's start by understanding the principles of test-driven development.  Watch this video about TDD (12 mins)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Task 5. Create Test Cases
+For your chosen API, write test cases to cover all the scenarios.  Remember to write test cases for boundaries and negative cases.  The end result will be a table that looks like the following API 1 example but with more test cases:
 
-### `npm run build`
+Test Case Number	Input (model, year)	Expected Output ($ value)	Test Description
+1	"Civic", 2020	6620	Sunny day scenario
+2	"911", 2020	2020	Numbers only is ok
+3	"Task-Force", -987	error message	Negative year
+4	"C200", "twenty twenty"	error message	Wrong data type
+ 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The following resources may help:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+​​​​​​​​​​​​​​REQUIRED Designing Test Cases http://sqa.fyicenter.com/art/Designing_Unit_Test_Cases.html (1 hour)
+ 
+Task 6. Create Unit Tests
+Choose at least 5 of the test cases you designed, implement them as a set of automated unit test using one of the unit testing frameworks.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The following resources may help:
 
-### `npm run eject`
+RECOMMENDED API Unit testing in JavaScript https://dev.to/ghostaram/testing-express-api-routes-the-easy-way-beginners-guide-1mmi (2 hours)
+RECOMMENDED API Unit testing with Python: https://blog.eduonix.com/software-development/go-guide-api-testing-using-pytest/ (2 hours)
+RECOMMENDED API Unit testing in .NET https://medium.com/@mourya.vikas/api-automation-using-c-f93c8dc0daaf (2 hours)
+ 
+Task 7. Create API (do this AFTER Tasks 5 & 6)
+Now that you created the unit tests, build your chosen API.  Test your API against your unit tests as you go, until your API passes all the tests.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The following resources may help:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+RECOMMENDED Building an API in Node.js https://www.youtube.com/watch?v=TcvOgwQPsSo (30 mins)
+RECOMMENDED Building an API in Python https://towardsdatascience.com/the-right-way-to-build-an-api-with-python-cd08ab285f8f (30 mins)
+RECOMMENDED Building an API in .NET https://learn.microsoft.com/en-us/aspnet/web-api/overview/older-versions/build-restful-apis-with-aspnet-web-api (30mins)
+ 
+Task 8. Code Review and Refactoring
+Obtain feedback on your code from at least 1 of your team member by allowing them to review your code. Similarly, review your team member's code by pointing out the code smells and offering a solution.  Perform this activity within GitHub by raising a pull request from your feature branch to main and inviting reviewers. The reviewers are supposed to add comments within GitHub at relevant lines of code.  Here are the steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Push your code changes to a feature branch in your GitHub repository
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Create a pull request from your feature branch to the main branch.
 
-## Learn More
+Invite the other team as reviewers for your pull request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Ask them to review your code and provide feedback.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Review their code and provide feedback by adding comments within GitHub at relevant lines of code.
 
-### Code Splitting
+Discuss the feedback with the other team members and make any necessary changes to the code.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If needed, update the code to address the feedback.   
 
-### Analyzing the Bundle Size
+Refactor your code - find opportunities to make it more efficient, more readable, more maintainable.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Run your unit tests to ensure the updated code still pass unit test.
 
-### Making a Progressive Web App
+Once the updated code is tested, merge the pull request into the main branch.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The following resources may help:
 
-### Advanced Configuration
+​​​​​​​​​​​​​​RECOMMENDED Code smells https://blog.codinghorror.com/code-smells/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+RECOMMENDED Pull request reviews in GitHub https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews
+ 
+Task 9. Present at Show and Tell
+At the Show and Tell, your team will jointly present the tasks it has completed.  This presentation should be designed to take around 5 minutes for each team member – so, if you are in a 3-people team you have up 15 minutes in total.  The time limit will be strictly enforced.  You can use PowerPoint slides, Sway or Prezi to help with your presentation. You are encouraged to demonstrate the live API and tests.
+ 
+Task 10. Submit your work
+Before the Show and Tell session, upload all of your work (screenshots, presentation slides, documents or other files) using the Mission Submission Form.
 
-### Deployment
+The Client
+Turners Car Auctions is a market leader in the automotive industry in New Zealand, responsible for more than 10% of all used vehicle sales in the country. It has retained its original function as a vehicle auctioneer, operating in 19 branches nationwide, but has become increasingly dependent on a parallel role as a conventional used vehicle dealership. In support of that role, it has established in-house finance and vehicle insurance divisions that allow it to offer buyers a complete “one-stop shop” experience.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The Project Brief
+Turners is currently undertaking a major re-design of its motor vehicle insurance systems and processes, including an investigation of ways in which the introduction of new technologies can enhance the buyer experience. Here is some information about motor vehicle insurance at Turners [https://www.turners.co.nz/Cars/finance-insurance/car-insurance/].  You have just been assigned to the project team to help create a new insurance buying experience.
 
-### `npm run build` fails to minify
+​​​​​​​​​​​​​​
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ 
+
+ 
+
+Congratulations!  You have reached the end of the Advanced Full Stack Developer task list for this Mission!
